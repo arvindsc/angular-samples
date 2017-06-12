@@ -1,0 +1,11 @@
+<div 
+  [@signal]="signal"
+  class="traffic-light"
+  *ngIf="isHear">
+  </div>
+  <button (click)="onGoClick()">Go </button>
+  <button (click)="onStopClick()">Stop </button>
+  <hr>
+  <button (click)="onToggleClick()">Toggle </button>
+  
+  

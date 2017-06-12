@@ -1,0 +1,12 @@
+.traffic-light {
+  width: 100px;
+  height: 100px;
+  background-color:black;
+}
+.stop{
+    background-color: red;
+}
+.go{
+    background-color: green;
+}
+
