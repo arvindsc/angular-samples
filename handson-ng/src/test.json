@@ -1,0 +1,1222 @@
+{
+  "environment": "production",
+  "mediaUploadService": "https://upload.new.livestream.com",
+  "tracking": {
+    "mixpanel": {
+      "token": "61d57ff4b45a23016c9a98558467649b",
+      "applicationName": "Livestream Website",
+      "debug": false
+    },
+    "googleAnalytics": { "id": "UA-1169997-20" },
+    "analytics": {
+      "enabled": true,
+      "trackingEndpoint": "//analytics.livestream.com"
+    }
+  },
+  "playerUri": "//cdn.livestream.com/media/player.swf",
+  "chromecastApi": "4367E10F",
+  "mapboxAccountId": "livestreamllc.i64m05c3",
+  "facebookHost": "fbapp.new.livestream.com",
+  "fbGraphApi": "graph.facebook.com/v2.9",
+  "mobileGeoOauth": "//gl.api.new.livestream.com",
+  "services": {
+    "facebook": { "id": "142371818162" },
+    "simulcast_facebook": { "id": "1178841925524343" },
+    "simulcast_youtube": {
+      "id":
+        "539634172701-a2or9u336bd131a5evkb803o9ivmapv3.apps.googleusercontent.com"
+    }
+  },
+  "recurly": { "public_api_key": "sjc-xHmhbxeRoJdKF9tPZK9tLQ" },
+  "assets": {
+    "host": "//cdn.livestream.com/deploy/website/production/cad84e2",
+    "prefix": "/assets"
+  },
+  "searchOptions": {
+    "algolia_app_id": "7KJECL120U",
+    "algolia_search_key": "98f12273997c31eab6cfbfbe64f99d92",
+    "algolia_search_index_list": {
+      "Events": "events",
+      "Accounts": "accounts",
+      "Videos": "videos"
+    },
+    "algolia_discovery_index_list": {
+      "Events": "events",
+      "Accounts": "accounts",
+      "Videos": "videos",
+      "Categories": "categories"
+    },
+    "analytics_search_index_list": {
+      "Accounts": "analytics-accounts",
+      "Events": "analytics-events",
+      "Videos": "analytics-videos",
+      "Images": "analytics-images",
+      "Statuses": "analytics-statuses"
+    }
+  },
+  "api": {
+    "relativeUrlEndpoint": "/api",
+    "absoluteUrlEndpoint": "//api.new.livestream.com",
+    "host": "api.new.livestream.com",
+    "playerHost": "player-api.new.livestream.com",
+    "ottAppsHost": "ott-prod.appspot.com",
+    "donationHost": "https://donations.livestream.com/v2",
+    "javaApiHost": "https://producer-api.appspot.com/v1",
+    "authHost": "https://oauth.new.livestream.com"
+  },
+  "account": null,
+  "event": {
+    "id": 7790710,
+    "short_name": null,
+    "full_name": "Full Stack for Front End Engineers, Part 2",
+    "description": null,
+    "owner_account_id": 4894689,
+    "owner": {
+      "id": 4894689,
+      "full_name": "Frontend Masters",
+      "short_name": null,
+      "picture": {
+        "original_width": 400,
+        "original_height": 400,
+        "url":
+          "http://img.new.livestream.com/accounts/00000000004aafe1/37ac20f1-8cfe-42cf-bce0-7ec04d461764.jpg",
+        "thumb_url":
+          "http://img.new.livestream.com/accounts/00000000004aafe1/37ac20f1-8cfe-42cf-bce0-7ec04d461764_50x50.jpg",
+        "small_url":
+          "http://img.new.livestream.com/accounts/00000000004aafe1/37ac20f1-8cfe-42cf-bce0-7ec04d461764_170x170.jpg",
+        "medium_url": null,
+        "secure_thumb_url":
+          "https://img.new.livestream.com/accounts/00000000004aafe1/37ac20f1-8cfe-42cf-bce0-7ec04d461764_50x50.jpg",
+        "secure_small_url":
+          "https://img.new.livestream.com/accounts/00000000004aafe1/37ac20f1-8cfe-42cf-bce0-7ec04d461764_170x170.jpg",
+        "secure_medium_url": null,
+        "width": 331,
+        "height": 331
+      },
+      "is_beta_producer": true,
+      "timezone": "America/Chicago",
+      "description": null,
+      "background_image": null,
+      "background_color": null,
+      "background_repeat": null,
+      "background_position": null,
+      "background_attachment": null,
+      "created_at": "2013-08-01T16:01:11.275Z",
+      "is_locked": false,
+      "upcoming_events": { "total": 0 },
+      "past_events": { "total": 0 },
+      "links": null,
+      "google_analytics_id": null,
+      "mixpanel_id": "140370bc04a6c-0b4e0b572-6a1b2e7a-13c680-140370bc04b300",
+      "signup_page": "/",
+      "signup_action": "direct",
+      "devices": { "total": 0, "data": [] },
+      "category": null,
+      "category_name": null,
+      "private": true,
+      "features": {
+        "redesign": true,
+        "can_toggle_redesign": true,
+        "open_rtmp": true,
+        "simulcast": true,
+        "custom_rtmp": true,
+        "live_toggle": true,
+        "packager_playlist_rollout": true,
+        "packager_playlist_vod_rollout": true,
+        "simulcast_rollout": true,
+        "simulcast_v2_read_only": true,
+        "simulcast_v3_rollout": true,
+        "syndicator": true,
+        "youtube_rollout": true
+      },
+      "plan_id": 9,
+      "plan_info": {
+        "id": 9,
+        "features": "134211710",
+        "type": 40,
+        "is_scoped": false
+      },
+      "features_with_plan": "134211710",
+      "is_searchable": false,
+      "is_public": false,
+      "ad_account_id": null,
+      "ad_provider_id": null,
+      "ad_custom_params": {
+        "accountId": "%accountId%",
+        "eventId": "%eventId%",
+        "live": "%isLive%",
+        "embedPath": "%embedPath%",
+        "embedHost": "%embedHost%"
+      },
+      "ad_enabled_for_vod": false,
+      "ad_enabled_for_live": false,
+      "ad_rules_enabled": false,
+      "ad_midroll_duration": 30,
+      "ad_enabled_for_owner": false,
+      "ad_types": ["preroll"],
+      "ad_enabled": false,
+      "followers": {
+        "total": 762,
+        "data": [
+          {
+            "id": 13739824,
+            "full_name": "João Costa",
+            "short_name": null,
+            "picture": null,
+            "is_beta_producer": true,
+            "timezone": "Europe/Lisbon",
+            "description": null,
+            "background_image": null,
+            "background_color": null,
+            "background_repeat": null,
+            "background_position": null,
+            "background_attachment": null,
+            "created_at": "2015-05-28T23:43:17.363Z",
+            "is_locked": false,
+            "upcoming_events": null,
+            "past_events": null,
+            "links": null,
+            "google_analytics_id": null,
+            "mixpanel_id":
+              "14d94a88d1515b-00cecf715-6010177f-100200-14d94a88d167f",
+            "signup_page": "/accounts/4894689/events/4080350",
+            "signup_action": "follow",
+            "devices": { "total": 0, "data": [] },
+            "category": null,
+            "category_name": null,
+            "private": false,
+            "features": null,
+            "plan_id": -1,
+            "plan_info": {
+              "id": -1,
+              "features": "0",
+              "type": 10,
+              "is_scoped": false
+            },
+            "features_with_plan": "0",
+            "is_searchable": true,
+            "is_public": true,
+            "ad_account_id": null,
+            "ad_provider_id": null,
+            "ad_custom_params": {
+              "accountId": "%accountId%",
+              "eventId": "%eventId%",
+              "live": "%isLive%",
+              "embedPath": "%embedPath%",
+              "embedHost": "%embedHost%"
+            },
+            "ad_enabled_for_vod": false,
+            "ad_enabled_for_live": false,
+            "ad_rules_enabled": false,
+            "ad_midroll_duration": 30,
+            "ad_enabled_for_owner": true,
+            "ad_types": ["preroll"],
+            "ad_enabled": false,
+            "followers": null,
+            "following": null
+          },
+          {
+            "id": 13742574,
+            "full_name": "Nikolaos Pavlou",
+            "short_name": null,
+            "picture": {
+              "original_width": 200,
+              "original_height": 200,
+              "url":
+                "http://img.new.livestream.com/accounts/0000000000d1b1ee/7e2d4b5c-2573-4b8c-a33f-3ef0340982e9.jpg",
+              "thumb_url":
+                "http://img.new.livestream.com/accounts/0000000000d1b1ee/7e2d4b5c-2573-4b8c-a33f-3ef0340982e9_50x50.jpg",
+              "small_url":
+                "http://img.new.livestream.com/accounts/0000000000d1b1ee/7e2d4b5c-2573-4b8c-a33f-3ef0340982e9_170x170.jpg",
+              "medium_url": null,
+              "secure_thumb_url":
+                "https://img.new.livestream.com/accounts/0000000000d1b1ee/7e2d4b5c-2573-4b8c-a33f-3ef0340982e9_50x50.jpg",
+              "secure_small_url":
+                "https://img.new.livestream.com/accounts/0000000000d1b1ee/7e2d4b5c-2573-4b8c-a33f-3ef0340982e9_170x170.jpg",
+              "secure_medium_url": null,
+              "width": 200,
+              "height": 200
+            },
+            "is_beta_producer": true,
+            "timezone": "America/Los_Angeles",
+            "description": null,
+            "background_image": null,
+            "background_color": null,
+            "background_repeat": null,
+            "background_position": null,
+            "background_attachment": null,
+            "created_at": "2015-05-29T06:38:54.646Z",
+            "is_locked": false,
+            "upcoming_events": null,
+            "past_events": null,
+            "links": null,
+            "google_analytics_id": null,
+            "mixpanel_id":
+              "10431795eb045c-095d84901-43681f0a-2ee000-10431795eb165d",
+            "signup_page": "/accounts/4894689/events/4080350",
+            "signup_action": "follow",
+            "devices": { "total": 0, "data": [] },
+            "category": null,
+            "category_name": null,
+            "private": false,
+            "features": null,
+            "plan_id": -1,
+            "plan_info": {
+              "id": -1,
+              "features": "0",
+              "type": 10,
+              "is_scoped": false
+            },
+            "features_with_plan": "0",
+            "is_searchable": true,
+            "is_public": true,
+            "ad_account_id": null,
+            "ad_provider_id": null,
+            "ad_custom_params": {
+              "accountId": "%accountId%",
+              "eventId": "%eventId%",
+              "live": "%isLive%",
+              "embedPath": "%embedPath%",
+              "embedHost": "%embedHost%"
+            },
+            "ad_enabled_for_vod": false,
+            "ad_enabled_for_live": false,
+            "ad_rules_enabled": false,
+            "ad_midroll_duration": 30,
+            "ad_enabled_for_owner": true,
+            "ad_types": ["preroll"],
+            "ad_enabled": false,
+            "followers": null,
+            "following": null
+          },
+          {
+            "id": 13742623,
+            "full_name": "Charlie Cheng",
+            "short_name": null,
+            "picture": null,
+            "is_beta_producer": true,
+            "timezone": "Asia/Shanghai",
+            "description": null,
+            "background_image": null,
+            "background_color": null,
+            "background_repeat": null,
+            "background_position": null,
+            "background_attachment": null,
+            "created_at": "2015-05-29T06:53:33.400Z",
+            "is_locked": false,
+            "upcoming_events": null,
+            "past_events": null,
+            "links": null,
+            "google_analytics_id": null,
+            "mixpanel_id":
+              "14d9e623f3d4b0-0294698ed-45040a39-3d10d-14d9e623f3e3b2",
+            "signup_page": "/accounts/4894689/events/4080350",
+            "signup_action": "follow",
+            "devices": { "total": 0, "data": [] },
+            "category": null,
+            "category_name": null,
+            "private": false,
+            "features": null,
+            "plan_id": -1,
+            "plan_info": {
+              "id": -1,
+              "features": "0",
+              "type": 10,
+              "is_scoped": false
+            },
+            "features_with_plan": "0",
+            "is_searchable": true,
+            "is_public": true,
+            "ad_account_id": null,
+            "ad_provider_id": null,
+            "ad_custom_params": {
+              "accountId": "%accountId%",
+              "eventId": "%eventId%",
+              "live": "%isLive%",
+              "embedPath": "%embedPath%",
+              "embedHost": "%embedHost%"
+            },
+            "ad_enabled_for_vod": false,
+            "ad_enabled_for_live": false,
+            "ad_rules_enabled": false,
+            "ad_midroll_duration": 30,
+            "ad_enabled_for_owner": true,
+            "ad_types": ["preroll"],
+            "ad_enabled": false,
+            "followers": null,
+            "following": null
+          },
+          {
+            "id": 13744940,
+            "full_name": "Aniruddha Barapatre",
+            "short_name": null,
+            "picture": null,
+            "is_beta_producer": true,
+            "timezone": "America/New_York",
+            "description": null,
+            "background_image": null,
+            "background_color": null,
+            "background_repeat": null,
+            "background_position": null,
+            "background_attachment": null,
+            "created_at": "2015-05-29T14:14:54.526Z",
+            "is_locked": false,
+            "upcoming_events": null,
+            "past_events": null,
+            "links": null,
+            "google_analytics_id": null,
+            "mixpanel_id":
+              "14da006602295a-07cb31ff5839988-4b594136-1fa400-14da0066023be2",
+            "signup_page": "/accounts/new",
+            "signup_action": "direct",
+            "devices": { "total": 0, "data": [] },
+            "category": null,
+            "category_name": null,
+            "private": false,
+            "features": null,
+            "plan_id": -1,
+            "plan_info": {
+              "id": -1,
+              "features": "0",
+              "type": 10,
+              "is_scoped": false
+            },
+            "features_with_plan": "0",
+            "is_searchable": true,
+            "is_public": true,
+            "ad_account_id": null,
+            "ad_provider_id": null,
+            "ad_custom_params": {
+              "accountId": "%accountId%",
+              "eventId": "%eventId%",
+              "live": "%isLive%",
+              "embedPath": "%embedPath%",
+              "embedHost": "%embedHost%"
+            },
+            "ad_enabled_for_vod": false,
+            "ad_enabled_for_live": false,
+            "ad_rules_enabled": false,
+            "ad_midroll_duration": 30,
+            "ad_enabled_for_owner": true,
+            "ad_types": ["preroll"],
+            "ad_enabled": false,
+            "followers": null,
+            "following": null
+          },
+          {
+            "id": 13748542,
+            "full_name": "mathewsp",
+            "short_name": null,
+            "picture": null,
+            "is_beta_producer": true,
+            "timezone": "America/New_York",
+            "description": null,
+            "background_image": null,
+            "background_color": null,
+            "background_repeat": null,
+            "background_position": null,
+            "background_attachment": null,
+            "created_at": "2015-05-29T20:39:29.009Z",
+            "is_locked": false,
+            "upcoming_events": null,
+            "past_events": null,
+            "links": null,
+            "google_analytics_id": null,
+            "mixpanel_id":
+              "14d9ae9f251f1-0a327fa54cab2c-3a064d5a-15f900-14d9ae9f252330",
+            "signup_page": "/accounts/new",
+            "signup_action": "direct",
+            "devices": { "total": 0, "data": [] },
+            "category": null,
+            "category_name": null,
+            "private": false,
+            "features": null,
+            "plan_id": -1,
+            "plan_info": {
+              "id": -1,
+              "features": "0",
+              "type": 10,
+              "is_scoped": false
+            },
+            "features_with_plan": "0",
+            "is_searchable": true,
+            "is_public": true,
+            "ad_account_id": null,
+            "ad_provider_id": null,
+            "ad_custom_params": {
+              "accountId": "%accountId%",
+              "eventId": "%eventId%",
+              "live": "%isLive%",
+              "embedPath": "%embedPath%",
+              "embedHost": "%embedHost%"
+            },
+            "ad_enabled_for_vod": false,
+            "ad_enabled_for_live": false,
+            "ad_rules_enabled": false,
+            "ad_midroll_duration": 30,
+            "ad_enabled_for_owner": true,
+            "ad_types": ["preroll"],
+            "ad_enabled": false,
+            "followers": null,
+            "following": null
+          }
+        ]
+      },
+      "following": { "total": 0, "data": [] }
+    },
+    "logo": {
+      "original_width": 512,
+      "original_height": 512,
+      "url":
+        "http://img.new.livestream.com/events/000000000076e076/c41067f9-aaba-47d9-a703-b2e6779a4997.jpg",
+      "thumb_url":
+        "http://img.new.livestream.com/events/000000000076e076/c41067f9-aaba-47d9-a703-b2e6779a4997_50x28.jpg",
+      "small_url":
+        "http://img.new.livestream.com/events/000000000076e076/c41067f9-aaba-47d9-a703-b2e6779a4997_170x95.jpg",
+      "medium_url":
+        "http://img.new.livestream.com/events/000000000076e076/c41067f9-aaba-47d9-a703-b2e6779a4997_640x359.jpg",
+      "secure_thumb_url":
+        "https://img.new.livestream.com/events/000000000076e076/c41067f9-aaba-47d9-a703-b2e6779a4997_50x28.jpg",
+      "secure_small_url":
+        "https://img.new.livestream.com/events/000000000076e076/c41067f9-aaba-47d9-a703-b2e6779a4997_170x95.jpg",
+      "secure_medium_url":
+        "https://img.new.livestream.com/events/000000000076e076/c41067f9-aaba-47d9-a703-b2e6779a4997_640x359.jpg",
+      "width": 508,
+      "height": 285
+    },
+    "background_image": null,
+    "background_color": null,
+    "background_repeat": null,
+    "background_position": null,
+    "background_attachment": null,
+    "live_video_post_id": 164637811,
+    "broadcast_id": -1,
+    "links": null,
+    "viewer_count": 0,
+    "activity_disabled": true,
+    "created_at": "2017-10-09T14:29:47.928Z",
+    "updated_at": "2017-10-20T21:48:00.986Z",
+    "expires_at": null,
+    "draft": false,
+    "start_time": "2017-10-20T14:30:00.000Z",
+    "end_time": "2017-10-20T21:30:00.000Z",
+    "feed": {
+      "total": 6,
+      "data": [
+        {
+          "type": "video",
+          "data": {
+            "id": 164637811,
+            "event_id": 7790710,
+            "caption": "6. Full Stack for Front End Engineers, Part 2",
+            "duration": 2791000,
+            "broadcast_id": 164637812,
+            "original_duration": 3352371,
+            "copied_from": null,
+            "description": null,
+            "asset_id": "87db2026-e072-490d-ab1b-67cb827b2646",
+            "asset": {
+              "qualities": [
+                {
+                  "bitrate": 428000,
+                  "height": 240,
+                  "name": "240p",
+                  "width": 432,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 1628000,
+                  "height": 480,
+                  "name": "480p",
+                  "width": 856,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 2128000,
+                  "height": 720,
+                  "name": "720p",
+                  "width": 1280,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 4628000,
+                  "height": 1080,
+                  "name": "1080p",
+                  "width": 1920,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                }
+              ],
+              "akamai_stream_id": 130567,
+              "stream_name": "4894689_7790710_lsiwg9bv3cp9s7pqfbu_1",
+              "workflow_status": "downloaded",
+              "state": null,
+              "workflow_retry_count": 0,
+              "workflow_error": 0,
+              "workflow_progress": 0,
+              "downloader_progress": 0,
+              "transcoded": true,
+              "transcode_started_at": null,
+              "inserted_to_download_queue_at": "2017-10-20T21:35:14.952Z",
+              "inserted_to_transcoding_queue_at": null,
+              "received_video_from_user_at": null,
+              "application_name": "Livestream Studio Software PC",
+              "is_available_on_playlist_service": false
+            },
+            "in": 561,
+            "out": 3352,
+            "thumbnail_width": 1920,
+            "thumbnail_height": 1080,
+            "draft": false,
+            "tags": null,
+            "created_at": "2017-10-20T20:39:22.516Z",
+            "updated_at": "2017-10-20T21:48:00.989Z",
+            "streamed_at": "2017-10-20T20:39:22.654Z",
+            "publish_at": "2017-10-20T21:37:35.503Z",
+            "views": 144,
+            "owner_account_id": null,
+            "likes": { "total": 0, "data": [] },
+            "comments": { "total": 0, "data": [] },
+            "thumbnail_url":
+              "http://img.new.livestream.com/events/000000000076e076/87db2026-e072-490d-ab1b-67cb827b2646_1470.jpg",
+            "thumbnail_url_small":
+              "http://img.new.livestream.com/events/000000000076e076/87db2026-e072-490d-ab1b-67cb827b2646_1470_150x83.jpg",
+            "secure_thumbnail_url":
+              "https://img.new.livestream.com/events/000000000076e076/87db2026-e072-490d-ab1b-67cb827b2646_1470.jpg",
+            "secure_thumbnail_url_small":
+              "https://img.new.livestream.com/events/000000000076e076/87db2026-e072-490d-ab1b-67cb827b2646_1470_150x83.jpg",
+            "progressive_url":
+              "http://pdvod.new.livestream.com/events/000000000076e076/87db2026-e072-490d-ab1b-67cb827b2646_428.mp4?start=561&end=3352&__gda__=1509108180_976bbf91d40a3533639080fd2d661fda",
+            "progressive_url_hd":
+              "http://pdvod.new.livestream.com/events/000000000076e076/87db2026-e072-490d-ab1b-67cb827b2646_4628.mp4?start=561&end=3352&__gda__=1509108180_64897e15b66f9840abbf165698a97baf",
+            "smil_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164637811.smil",
+            "secure_smil_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164637811.secure.smil",
+            "secure_progressive_url":
+              "https://pdvod.new.livestream.com/events/000000000076e076/87db2026-e072-490d-ab1b-67cb827b2646_428.mp4?start=561&end=3352&__gda__=1509108180_976bbf91d40a3533639080fd2d661fda",
+            "secure_progressive_url_hd":
+              "https://pdvod.new.livestream.com/events/000000000076e076/87db2026-e072-490d-ab1b-67cb827b2646_4628.mp4?start=561&end=3352&__gda__=1509108180_64897e15b66f9840abbf165698a97baf",
+            "m3u8_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164637811.m3u8",
+            "secure_m3u8_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164637811.secure.m3u8",
+            "f4m_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164637811.f4m",
+            "secure_f4m_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164637811.secure.f4m"
+          },
+          "is_liked": false,
+          "tracked": false
+        },
+        {
+          "type": "video",
+          "data": {
+            "id": 164635142,
+            "event_id": 7790710,
+            "caption": "5. Full Stack for Front End Engineers, Part 2",
+            "duration": 3172000,
+            "broadcast_id": 164635143,
+            "original_duration": 3734954,
+            "copied_from": null,
+            "description": null,
+            "asset_id": "488b3d31-d73a-4872-ac26-03b41eaae293",
+            "asset": {
+              "qualities": [
+                {
+                  "bitrate": 428000,
+                  "height": 240,
+                  "name": "240p",
+                  "width": 432,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 1628000,
+                  "height": 480,
+                  "name": "480p",
+                  "width": 856,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 2128000,
+                  "height": 720,
+                  "name": "720p",
+                  "width": 1280,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 4628000,
+                  "height": 1080,
+                  "name": "1080p",
+                  "width": 1920,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                }
+              ],
+              "akamai_stream_id": 408274,
+              "stream_name": "4894689_7790710_lsiko9c0h9v947faz0v_1",
+              "workflow_status": "downloaded",
+              "state": null,
+              "workflow_retry_count": 0,
+              "workflow_error": 0,
+              "workflow_progress": 0,
+              "downloader_progress": 0,
+              "transcoded": true,
+              "transcode_started_at": null,
+              "inserted_to_download_queue_at": "2017-10-20T20:39:12.341Z",
+              "inserted_to_transcoding_queue_at": null,
+              "received_video_from_user_at": null,
+              "application_name": "Livestream Studio Software PC",
+              "is_available_on_playlist_service": false
+            },
+            "in": 562,
+            "out": 3734,
+            "thumbnail_width": 1920,
+            "thumbnail_height": 1080,
+            "draft": false,
+            "tags": null,
+            "created_at": "2017-10-20T19:36:57.335Z",
+            "updated_at": "2017-10-20T20:45:35.148Z",
+            "streamed_at": "2017-10-20T19:36:57.547Z",
+            "publish_at": "2017-10-20T20:45:35.145Z",
+            "views": 126,
+            "owner_account_id": null,
+            "likes": { "total": 0, "data": [] },
+            "comments": { "total": 0, "data": [] },
+            "thumbnail_url":
+              "http://img.new.livestream.com/events/000000000076e076/488b3d31-d73a-4872-ac26-03b41eaae293_1560.jpg",
+            "thumbnail_url_small":
+              "http://img.new.livestream.com/events/000000000076e076/488b3d31-d73a-4872-ac26-03b41eaae293_1560_150x83.jpg",
+            "secure_thumbnail_url":
+              "https://img.new.livestream.com/events/000000000076e076/488b3d31-d73a-4872-ac26-03b41eaae293_1560.jpg",
+            "secure_thumbnail_url_small":
+              "https://img.new.livestream.com/events/000000000076e076/488b3d31-d73a-4872-ac26-03b41eaae293_1560_150x83.jpg",
+            "progressive_url":
+              "http://pdvod.new.livestream.com/events/000000000076e076/488b3d31-d73a-4872-ac26-03b41eaae293_428.mp4?start=562&end=3734&__gda__=1509108180_90c23f8cac8b3fe6cb457c7e29cb2659",
+            "progressive_url_hd":
+              "http://pdvod.new.livestream.com/events/000000000076e076/488b3d31-d73a-4872-ac26-03b41eaae293_4628.mp4?start=562&end=3734&__gda__=1509108180_7909370f00c5d33941c33c1c07a22518",
+            "smil_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164635142.smil",
+            "secure_smil_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164635142.secure.smil",
+            "secure_progressive_url":
+              "https://pdvod.new.livestream.com/events/000000000076e076/488b3d31-d73a-4872-ac26-03b41eaae293_428.mp4?start=562&end=3734&__gda__=1509108180_90c23f8cac8b3fe6cb457c7e29cb2659",
+            "secure_progressive_url_hd":
+              "https://pdvod.new.livestream.com/events/000000000076e076/488b3d31-d73a-4872-ac26-03b41eaae293_4628.mp4?start=562&end=3734&__gda__=1509108180_7909370f00c5d33941c33c1c07a22518",
+            "m3u8_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164635142.m3u8",
+            "secure_m3u8_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164635142.secure.m3u8",
+            "f4m_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164635142.f4m",
+            "secure_f4m_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164635142.secure.f4m"
+          },
+          "is_liked": false,
+          "tracked": false
+        },
+        {
+          "type": "video",
+          "data": {
+            "id": 164614564,
+            "event_id": 7790710,
+            "caption": "4. Full Stack for Front End Engineers, Part 2",
+            "duration": 4485000,
+            "broadcast_id": 164614565,
+            "original_duration": 8927556,
+            "copied_from": null,
+            "description": null,
+            "asset_id": "413bbb54-d3d0-4f31-80d4-261984f81112",
+            "asset": {
+              "qualities": [
+                {
+                  "bitrate": 428000,
+                  "height": 240,
+                  "name": "240p",
+                  "width": 432,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 1628000,
+                  "height": 480,
+                  "name": "480p",
+                  "width": 856,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 2128000,
+                  "height": 720,
+                  "name": "720p",
+                  "width": 1280,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 4628000,
+                  "height": 1080,
+                  "name": "1080p",
+                  "width": 1920,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                }
+              ],
+              "akamai_stream_id": 446724,
+              "stream_name": "4894689_7790710_lsizclb7pjne5eyt8em_1",
+              "workflow_status": "downloaded",
+              "state": null,
+              "workflow_retry_count": 0,
+              "workflow_error": 0,
+              "workflow_progress": 0,
+              "downloader_progress": 0,
+              "transcoded": true,
+              "transcode_started_at": null,
+              "inserted_to_download_queue_at": "2017-10-20T19:36:41.019Z",
+              "inserted_to_transcoding_queue_at": null,
+              "received_video_from_user_at": null,
+              "application_name": "Livestream Studio Software PC",
+              "is_available_on_playlist_service": false
+            },
+            "in": 4442,
+            "out": 8927,
+            "thumbnail_width": 1920,
+            "thumbnail_height": 1080,
+            "draft": false,
+            "tags": null,
+            "created_at": "2017-10-20T17:07:53.414Z",
+            "updated_at": "2017-10-20T19:49:53.903Z",
+            "streamed_at": "2017-10-20T17:07:53.509Z",
+            "publish_at": "2017-10-20T19:49:53.899Z",
+            "views": 246,
+            "owner_account_id": null,
+            "likes": { "total": 0, "data": [] },
+            "comments": { "total": 0, "data": [] },
+            "thumbnail_url":
+              "http://img.new.livestream.com/events/000000000076e076/413bbb54-d3d0-4f31-80d4-261984f81112_5880.jpg",
+            "thumbnail_url_small":
+              "http://img.new.livestream.com/events/000000000076e076/413bbb54-d3d0-4f31-80d4-261984f81112_5880_150x83.jpg",
+            "secure_thumbnail_url":
+              "https://img.new.livestream.com/events/000000000076e076/413bbb54-d3d0-4f31-80d4-261984f81112_5880.jpg",
+            "secure_thumbnail_url_small":
+              "https://img.new.livestream.com/events/000000000076e076/413bbb54-d3d0-4f31-80d4-261984f81112_5880_150x83.jpg",
+            "progressive_url":
+              "http://pdvod.new.livestream.com/events/000000000076e076/413bbb54-d3d0-4f31-80d4-261984f81112_428.mp4?start=4442&end=8927&__gda__=1509108180_4a800030c673391697c9908111e1ee55",
+            "progressive_url_hd":
+              "http://pdvod.new.livestream.com/events/000000000076e076/413bbb54-d3d0-4f31-80d4-261984f81112_4628.mp4?start=4442&end=8927&__gda__=1509108180_db3946986226148838d7dbf9f8ba8d95",
+            "smil_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164614564.smil",
+            "secure_smil_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164614564.secure.smil",
+            "secure_progressive_url":
+              "https://pdvod.new.livestream.com/events/000000000076e076/413bbb54-d3d0-4f31-80d4-261984f81112_428.mp4?start=4442&end=8927&__gda__=1509108180_4a800030c673391697c9908111e1ee55",
+            "secure_progressive_url_hd":
+              "https://pdvod.new.livestream.com/events/000000000076e076/413bbb54-d3d0-4f31-80d4-261984f81112_4628.mp4?start=4442&end=8927&__gda__=1509108180_db3946986226148838d7dbf9f8ba8d95",
+            "m3u8_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164614564.m3u8",
+            "secure_m3u8_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164614564.secure.m3u8",
+            "f4m_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164614564.f4m",
+            "secure_f4m_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164614564.secure.f4m"
+          },
+          "is_liked": false,
+          "tracked": false
+        },
+        {
+          "type": "video",
+          "data": {
+            "id": 164612149,
+            "event_id": 7790710,
+            "caption": "3. Full Stack for Front End Engineers, Part 2",
+            "duration": 2946000,
+            "broadcast_id": 164612150,
+            "original_duration": 3419172,
+            "copied_from": null,
+            "description": null,
+            "asset_id": "e7102b9b-d996-4146-ac2c-2641b0a90c70",
+            "asset": {
+              "qualities": [
+                {
+                  "bitrate": 428000,
+                  "height": 240,
+                  "name": "240p",
+                  "width": 432,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 1628000,
+                  "height": 480,
+                  "name": "480p",
+                  "width": 856,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 2128000,
+                  "height": 720,
+                  "name": "720p",
+                  "width": 1280,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 4628000,
+                  "height": 1080,
+                  "name": "1080p",
+                  "width": 1920,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                }
+              ],
+              "akamai_stream_id": 447403,
+              "stream_name": "4894689_7790710_lsiyx1hzir6ba80e93q_1",
+              "workflow_status": "downloaded",
+              "state": null,
+              "workflow_retry_count": 0,
+              "workflow_error": 0,
+              "workflow_progress": 0,
+              "downloader_progress": 0,
+              "transcoded": true,
+              "transcode_started_at": null,
+              "inserted_to_download_queue_at": "2017-10-20T17:07:26.907Z",
+              "inserted_to_transcoding_queue_at": null,
+              "received_video_from_user_at": null,
+              "application_name": "Livestream Studio Software PC",
+              "is_available_on_playlist_service": false
+            },
+            "in": 473,
+            "out": 3419,
+            "thumbnail_width": 1920,
+            "thumbnail_height": 1080,
+            "draft": false,
+            "tags": null,
+            "created_at": "2017-10-20T16:10:27.690Z",
+            "updated_at": "2017-10-20T18:25:06.897Z",
+            "streamed_at": "2017-10-20T16:10:27.772Z",
+            "publish_at": "2017-10-20T18:25:06.893Z",
+            "views": 140,
+            "owner_account_id": null,
+            "likes": { "total": 0, "data": [] },
+            "comments": { "total": 0, "data": [] },
+            "thumbnail_url":
+              "http://img.new.livestream.com/events/000000000076e076/e7102b9b-d996-4146-ac2c-2641b0a90c70_1440.jpg",
+            "thumbnail_url_small":
+              "http://img.new.livestream.com/events/000000000076e076/e7102b9b-d996-4146-ac2c-2641b0a90c70_1440_150x83.jpg",
+            "secure_thumbnail_url":
+              "https://img.new.livestream.com/events/000000000076e076/e7102b9b-d996-4146-ac2c-2641b0a90c70_1440.jpg",
+            "secure_thumbnail_url_small":
+              "https://img.new.livestream.com/events/000000000076e076/e7102b9b-d996-4146-ac2c-2641b0a90c70_1440_150x83.jpg",
+            "progressive_url":
+              "http://pdvod.new.livestream.com/events/000000000076e076/e7102b9b-d996-4146-ac2c-2641b0a90c70_428.mp4?start=473&end=3419&__gda__=1509108180_9e01e806f3e8d0c691e175533cf9cfcf",
+            "progressive_url_hd":
+              "http://pdvod.new.livestream.com/events/000000000076e076/e7102b9b-d996-4146-ac2c-2641b0a90c70_4628.mp4?start=473&end=3419&__gda__=1509108180_8f3bdb0a1782842bc334ae2ab305f3ab",
+            "smil_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164612149.smil",
+            "secure_smil_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164612149.secure.smil",
+            "secure_progressive_url":
+              "https://pdvod.new.livestream.com/events/000000000076e076/e7102b9b-d996-4146-ac2c-2641b0a90c70_428.mp4?start=473&end=3419&__gda__=1509108180_9e01e806f3e8d0c691e175533cf9cfcf",
+            "secure_progressive_url_hd":
+              "https://pdvod.new.livestream.com/events/000000000076e076/e7102b9b-d996-4146-ac2c-2641b0a90c70_4628.mp4?start=473&end=3419&__gda__=1509108180_8f3bdb0a1782842bc334ae2ab305f3ab",
+            "m3u8_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164612149.m3u8",
+            "secure_m3u8_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164612149.secure.m3u8",
+            "f4m_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164612149.f4m",
+            "secure_f4m_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164612149.secure.f4m"
+          },
+          "is_liked": false,
+          "tracked": false
+        },
+        {
+          "type": "video",
+          "data": {
+            "id": 164610557,
+            "event_id": 7790710,
+            "caption": "2. Full Stack for Front End Engineers, Part 2",
+            "duration": 2422000,
+            "broadcast_id": 164610558,
+            "original_duration": 2748233,
+            "copied_from": null,
+            "description": null,
+            "asset_id": "624065d0-aa97-408a-9cb8-cebf255dbb5a",
+            "asset": {
+              "qualities": [
+                {
+                  "bitrate": 428000,
+                  "height": 240,
+                  "name": "240p",
+                  "width": 432,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 1628000,
+                  "height": 480,
+                  "name": "480p",
+                  "width": 856,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 2128000,
+                  "height": 720,
+                  "name": "720p",
+                  "width": 1280,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 4628000,
+                  "height": 1080,
+                  "name": "1080p",
+                  "width": 1920,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                }
+              ],
+              "akamai_stream_id": 407567,
+              "stream_name": "4894689_7790710_lsig8o919xfflz5ehzj_1",
+              "workflow_status": "downloaded",
+              "state": null,
+              "workflow_retry_count": 0,
+              "workflow_error": 0,
+              "workflow_progress": 0,
+              "downloader_progress": 0,
+              "transcoded": true,
+              "transcode_started_at": null,
+              "inserted_to_download_queue_at": "2017-10-20T16:10:22.039Z",
+              "inserted_to_transcoding_queue_at": null,
+              "received_video_from_user_at": null,
+              "application_name": "Livestream Studio Software PC",
+              "is_available_on_playlist_service": false
+            },
+            "in": 326,
+            "out": 2748,
+            "thumbnail_width": 1920,
+            "thumbnail_height": 1080,
+            "draft": false,
+            "tags": null,
+            "created_at": "2017-10-20T15:24:33.761Z",
+            "updated_at": "2017-10-20T16:17:09.039Z",
+            "streamed_at": "2017-10-20T15:24:33.867Z",
+            "publish_at": "2017-10-20T16:17:09.037Z",
+            "views": 144,
+            "owner_account_id": null,
+            "likes": { "total": 0, "data": [] },
+            "comments": { "total": 0, "data": [] },
+            "thumbnail_url":
+              "http://img.new.livestream.com/events/000000000076e076/624065d0-aa97-408a-9cb8-cebf255dbb5a_1110.jpg",
+            "thumbnail_url_small":
+              "http://img.new.livestream.com/events/000000000076e076/624065d0-aa97-408a-9cb8-cebf255dbb5a_1110_150x83.jpg",
+            "secure_thumbnail_url":
+              "https://img.new.livestream.com/events/000000000076e076/624065d0-aa97-408a-9cb8-cebf255dbb5a_1110.jpg",
+            "secure_thumbnail_url_small":
+              "https://img.new.livestream.com/events/000000000076e076/624065d0-aa97-408a-9cb8-cebf255dbb5a_1110_150x83.jpg",
+            "progressive_url":
+              "http://pdvod.new.livestream.com/events/000000000076e076/624065d0-aa97-408a-9cb8-cebf255dbb5a_428.mp4?start=326&end=2748&__gda__=1509108180_dfe82c44523b8a845d9e408ef9655cb9",
+            "progressive_url_hd":
+              "http://pdvod.new.livestream.com/events/000000000076e076/624065d0-aa97-408a-9cb8-cebf255dbb5a_4628.mp4?start=326&end=2748&__gda__=1509108180_6d549ad706ebea350c9a5bd6009a3135",
+            "smil_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164610557.smil",
+            "secure_smil_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164610557.secure.smil",
+            "secure_progressive_url":
+              "https://pdvod.new.livestream.com/events/000000000076e076/624065d0-aa97-408a-9cb8-cebf255dbb5a_428.mp4?start=326&end=2748&__gda__=1509108180_dfe82c44523b8a845d9e408ef9655cb9",
+            "secure_progressive_url_hd":
+              "https://pdvod.new.livestream.com/events/000000000076e076/624065d0-aa97-408a-9cb8-cebf255dbb5a_4628.mp4?start=326&end=2748&__gda__=1509108180_6d549ad706ebea350c9a5bd6009a3135",
+            "m3u8_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164610557.m3u8",
+            "secure_m3u8_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164610557.secure.m3u8",
+            "f4m_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164610557.f4m",
+            "secure_f4m_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164610557.secure.f4m"
+          },
+          "is_liked": false,
+          "tracked": false
+        },
+        {
+          "type": "video",
+          "data": {
+            "id": 164608144,
+            "event_id": 7790710,
+            "caption": "1. Full Stack for Front End Engineers, Part 2",
+            "duration": 2512000,
+            "broadcast_id": 164608145,
+            "original_duration": 3700093,
+            "copied_from": null,
+            "description": null,
+            "asset_id": "6b5da569-76fc-418e-a09b-fbe9eb874bdb",
+            "asset": {
+              "qualities": [
+                {
+                  "bitrate": 428000,
+                  "height": 240,
+                  "name": "240p",
+                  "width": 432,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 1628000,
+                  "height": 480,
+                  "name": "480p",
+                  "width": 856,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 2128000,
+                  "height": 720,
+                  "name": "720p",
+                  "width": 1280,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                },
+                {
+                  "bitrate": 4628000,
+                  "height": 1080,
+                  "name": "1080p",
+                  "width": 1920,
+                  "codec": { "video": "avc1.77.31", "audio": "mp4a.40.2" },
+                  "angle": 1
+                }
+              ],
+              "akamai_stream_id": 446730,
+              "stream_name": "4894689_7790710_lsinl84azv26uafxdj5_1",
+              "workflow_status": "downloaded",
+              "state": null,
+              "workflow_retry_count": 0,
+              "workflow_error": 0,
+              "workflow_progress": 0,
+              "downloader_progress": 0,
+              "transcoded": true,
+              "transcode_started_at": null,
+              "inserted_to_download_queue_at": "2017-10-20T15:24:28.669Z",
+              "inserted_to_transcoding_queue_at": null,
+              "received_video_from_user_at": null,
+              "application_name": "Livestream Studio Software PC",
+              "is_available_on_playlist_service": false
+            },
+            "in": 1188,
+            "out": 3700,
+            "thumbnail_width": 1920,
+            "thumbnail_height": 1080,
+            "draft": false,
+            "tags": null,
+            "created_at": "2017-10-20T14:22:48.501Z",
+            "updated_at": "2017-10-20T15:34:03.060Z",
+            "streamed_at": "2017-10-20T14:22:48.636Z",
+            "publish_at": "2017-10-20T15:34:03.058Z",
+            "views": 258,
+            "owner_account_id": null,
+            "likes": { "total": 0, "data": [] },
+            "comments": { "total": 0, "data": [] },
+            "thumbnail_url":
+              "http://img.new.livestream.com/events/000000000076e076/6b5da569-76fc-418e-a09b-fbe9eb874bdb_2010.jpg",
+            "thumbnail_url_small":
+              "http://img.new.livestream.com/events/000000000076e076/6b5da569-76fc-418e-a09b-fbe9eb874bdb_2010_150x83.jpg",
+            "secure_thumbnail_url":
+              "https://img.new.livestream.com/events/000000000076e076/6b5da569-76fc-418e-a09b-fbe9eb874bdb_2010.jpg",
+            "secure_thumbnail_url_small":
+              "https://img.new.livestream.com/events/000000000076e076/6b5da569-76fc-418e-a09b-fbe9eb874bdb_2010_150x83.jpg",
+            "progressive_url":
+              "http://pdvod.new.livestream.com/events/000000000076e076/6b5da569-76fc-418e-a09b-fbe9eb874bdb_428.mp4?start=1188&end=3700&__gda__=1509108180_8470d02a7b6963c8e5b29c315bcda17a",
+            "progressive_url_hd":
+              "http://pdvod.new.livestream.com/events/000000000076e076/6b5da569-76fc-418e-a09b-fbe9eb874bdb_4628.mp4?start=1188&end=3700&__gda__=1509108180_daabc6f2604c2f1e61e4a6bdb4305ef6",
+            "smil_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164608144.smil",
+            "secure_smil_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164608144.secure.smil",
+            "secure_progressive_url":
+              "https://pdvod.new.livestream.com/events/000000000076e076/6b5da569-76fc-418e-a09b-fbe9eb874bdb_428.mp4?start=1188&end=3700&__gda__=1509108180_8470d02a7b6963c8e5b29c315bcda17a",
+            "secure_progressive_url_hd":
+              "https://pdvod.new.livestream.com/events/000000000076e076/6b5da569-76fc-418e-a09b-fbe9eb874bdb_4628.mp4?start=1188&end=3700&__gda__=1509108180_daabc6f2604c2f1e61e4a6bdb4305ef6",
+            "m3u8_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164608144.m3u8",
+            "secure_m3u8_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164608144.secure.m3u8",
+            "f4m_url":
+              "http://api.new.livestream.com/accounts/4894689/events/7790710/videos/164608144.f4m",
+            "secure_f4m_url":
+              "https://api.new.livestream.com/accounts/4894689/events/7790710/videos/164608144.secure.f4m"
+          },
+          "is_liked": false,
+          "tracked": false
+        }
+      ]
+    },
+    "stream_info": null,
+    "real_time": {
+      "path": "/events/7790710",
+      "namespace": "/events",
+      "roomId": 7790710
+    },
+    "tags": null,
+    "in_progress": false,
+    "likes": { "total": 0, "data": [] },
+    "video_count": 6,
+    "post_count": null,
+    "views_count": null,
+    "is_embeddable": true,
+    "is_white_labeled": true,
+    "is_embed_white_labeled": false,
+    "is_player_white_labeled": false,
+    "has_advanced_analytics": false,
+    "viewer_count_visible": false,
+    "post_comments_enabled": false,
+    "live_chat_enabled": false,
+    "is_searchable": false,
+    "is_public": false,
+    "ad_account_id": null,
+    "ad_provider_id": null,
+    "ad_custom_params": {
+      "accountId": "%accountId%",
+      "eventId": "%eventId%",
+      "live": "%isLive%",
+      "embedPath": "%embedPath%",
+      "embedHost": "%embedHost%"
+    },
+    "ad_enabled_for_vod": false,
+    "ad_enabled_for_live": false,
+    "ad_rules_enabled": false,
+    "ad_midroll_duration": 30,
+    "ad_enabled_for_owner": true,
+    "ad_types": ["preroll"],
+    "ad_enabled": false,
+    "embed_restriction": "off",
+    "embed_restriction_blacklist": null,
+    "embed_restriction_whitelist": ["*.livestream.com/*"],
+    "is_password_protected": false,
+    "lat": 44.9765,
+    "lng": -93.2715,
+    "is_donations_enabled": true,
+    "guest_chat_enabled": true,
+    "geo_blocked": null
+  },
+  "angular_chat_app_css":
+    "//cdn.livestream.com/deploy/apps/production/events/3.7.41/stylesheets/events.css",
+  "angular_chat_app_js": {
+    "require_source":
+      "//cdn.livestream.com/deploy/apps/production/events/3.7.41/javascripts/require.js",
+    "require_main":
+      "//cdn.livestream.com/deploy/apps/production/events/3.7.41/javascripts/live_chat.js"
+  },
+  "playerJsUrl": "//cdn.livestream.com/playerjs",
+  "playerMUrl": "//cdn.livestream.com/playerm",
+  "sioProxyAccounts": [244733, 10722159, 1864284],
+  "client_ip": "203.33.154.2"
+}
